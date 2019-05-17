@@ -1,8 +1,78 @@
 <!DOCTYPE html>
 <html lang="de">
-<body bgcolor="#35393C"></body>
-<header><title>This is title for fearless and sad persons</title></header>
-<meta charset="urf8">
-<h2>I´m Sadman,</h2>
+<head>
+        <!--          JQUERY wird hinzugefügt für einfache Befehle mit $-zeichen davor             -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">        </script>
+       <meta charset="UTF-8">
+       <title style="color: mintcream">This is title for fearless and sad persons</title>  
+</head> 
+<body style="background-color:'#35393C'">
+    <header style="background-color: midnightblue; color: mintcream">I´m Sadman
+    </header>
+    <section id="meinkrassesfenster" class="flexibel" style="display:flex" >
+        <div id="knopfbehälter" style="background-color: green">
+            <div id="Home" style="background-color: paleturquoise">
+                Home
+             </div>          
+            <div id="Knopf1" style="background-color: lightsteelblue">
+                DRÜCK MICH
+            </div>
+            <div id="Knopf2">
+                Drück Mich 2
+            </div>
+            <div id="Knopf3" style="background-color: lime">
+                DRÜCK MICH 3
+            </div>
+            <div id="Knopf4" style="background-color: magenta">
+                Drück Mich 4
+            </div>
+            
+        </div>
+     
+        <div style="background-color:pink" id="PinkFenster">
+                 Hauptseite
+        </div>
+    </section>
+
+
+<script>
+    $("#Home").click(        //Klick auf Home
+        function(){ 
+            $("#PinkFenster").css("background-color","pink");//Pink Hintergrund
+            $("#PinkFenster").text("Hauptseite");//Text ersetzen
+        }); 
+
+    $("#Knopf1").click(        //Klick auf Knopf1
+        function(){ 
+            $("#PinkFenster").css("background-color","steelblue");//hellblauer Hintergrund
+            $("#PinkFenster").text("DAS PIEKST");//Text ersetzen
+        }); 
+
+    $("#Knopf2").click(        //Klick auf Knopf2
+        function(){ 
+            $("#PinkFenster").css("background-color","darkgrey");//darkgrey Hintergrund
+            $("#PinkFenster").text("132132132132132123132132");//Text ersetzen
+            alert("i´m Sadman");
+        }); 
+
+    $("#Knopf3").click(        //Klick auf Knopf3
+    function(){ 
+            $("#PinkFenster").css("background-color","yellow");//gelb Hintergrund
+            $("#PinkFenster").text("Heyyyyyyyyyyyyy");//Text ersetzen
+            alert("Thrall");
+        }); 
+
+    $("#Knopf4").click(        //Klick auf Knopf4
+    function(){ 
+            $("#PinkFenster").css("background-color","purple");//purple Hintergrund
+            $("#PinkFenster").text("Huhu");//Text ersetzen
+            alert("i´m Suppenman");
+        });     
+
+</script>
+
+    
 </body>
+
+
 </html>
